@@ -2,7 +2,7 @@
 
 A simple clone of the social chatting app : **WHATSAPP**
 
-<img src="./screen-shot.png">
+<img src="./screen-shot.png" height="600">
 
 ## Getting Started
 
