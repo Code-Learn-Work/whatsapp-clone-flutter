@@ -1,9 +1,8 @@
-# coding101
+# WhatsApp Clone
 
 A new Flutter project.
 
 ## Getting Started
 
 For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
-# coding101-flutter
+[documentation](https://flutter.io/)
