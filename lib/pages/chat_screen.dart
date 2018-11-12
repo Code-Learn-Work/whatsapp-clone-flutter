@@ -3,13 +3,15 @@ import '../models/chat_model.dart';
 
 class ChatScreen extends StatefulWidget {
   @override
-  _ChatScreenState createState() => _ChatScreenState();
+  ChatScreenState createState() {
+    return new ChatScreenState();
+  }
 }
 
-class _ChatScreenState extends State<ChatScreen> {
+class ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
+    return new ListView.builder(
       itemCount: dummyData.length,
       itemBuilder: (context,i)=>new Column(
         children: <Widget>[
@@ -25,21 +27,19 @@ class _ChatScreenState extends State<ChatScreen> {
             title: new Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                new Text(
-                  dummyData[i].name,
-                  style: new TextStyle(color: Colors.grey,fontSize: 14.0),
-                )
+                new Text(dummyData[i].name,style: new TextStyle(fontWeight: FontWeight.bold),),
+                new Text(dummyData[i].time,style: new TextStyle(color: Colors.grey,fontSize: 14.0)), 
               ],
             ),
             subtitle: new Container(
+              padding: const EdgeInsets.only(top: 5.0),
               child: new Text(
                 dummyData[i].message,
-                style: new TextStyle(color: Colors.grey,fontSize: 15.0),
-              ),
+                style: new TextStyle(fontSize: 15.0,color: Colors.grey)
+              )
             ),
           )
         ],
-        
       ),
     );
   }
